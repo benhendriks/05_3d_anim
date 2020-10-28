@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+}
+
+.container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  transform-style: preserve-3d;
+  min-height: 80vh;
+  width: 35rem;
+  background: #edecf0;
+  border-radius: 30px;
+  padding: 0rem 5rem;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+
+.anim {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.anim img {
+  width: 16rem;
+  z-index: 2;
+  transition: all 0.75s ease-out;
+}
+
+.circle {
+  width: 20rem;
+  height: 20rem;
+  background: #000;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.info h1 {
+  font-size: 3rem;
+  transition: all 0.75s ease-out;
+}
+.info h3 {
+  font-size: 1.3rem;
+  padding: 2rem 0rem;
+  color: #585858;
+  font-weight: lighter;
+  transition: all 0.75s ease-out;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.75s ease-out;
+}
+
+.btn button {
+  padding: 0.5rem 2rem;
+  background: none;
+  border: none;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #585858;
+}
+
+button.active {
+  background: #585858;
+  color: #fff;
+}
+
+.purchase {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  transition: all 0.75s ease-out;
+}
+
+.purchase button {
+  width: 100%;
+  padding: 1rem 0rem;
+  border: none;
+  background: #000;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
